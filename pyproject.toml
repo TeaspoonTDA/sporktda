@@ -1,0 +1,33 @@
+[build]
+
+[project]
+name = "spork"
+version = "0.0.1"
+authors = [
+  { name="Elizabeth Munch", email="muncheli@msu.edu" },
+]
+description = "Spork - the teaspoon companion"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+dependencies = ["dionysus", 
+"pandas", 
+"matplotlib", 
+"ripser", 
+"teaspoon", 
+"gudhi", 
+"networkx", 
+"numpy"]
+
+[tool.setuptools.packages.find]
+where = ["spork"]
+
+[project.urls]
+repository = "https://github.com/TeaspoonTDA/spork"
+homepage = "https://github.com/TeaspoonTDA/spork"
+documentation = "https://teaspoontda.github.io/spork/"
+
