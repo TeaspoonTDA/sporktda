@@ -6,7 +6,7 @@ The emerging field of topological signal processing brings methods from Topologi
 This python package, spork, is a companion package to teaspoon.
 All code is open source with up to date documentation, making the code easy to use, in particular for signal processing experts with limited experience in topological methods.
 
-.. image:: figures/takens_embedding_gif_v2.gif
+.. image:: figures/rail_network_animation.gif
   :width: 600 px
 
 
