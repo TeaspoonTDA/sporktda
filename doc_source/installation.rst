@@ -18,10 +18,10 @@ To install this package, both boost and CMake must be installed as system depend
 Installation
 **************
 
-The teaspoon package is available through pip install with version details found `here <https://pypi.org/project/teaspoon/>`_.
+The teaspoon package is available through pip install with version details found `here <https://pypi.org/project/spork/>`_.
 The package can be installed using the following pip installation:
 
-	``pip install teaspoon``
+	``pip install spork``
 
 To install the most up-to-date version of the code, you can clone the repo and then run::
 
