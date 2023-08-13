@@ -2,7 +2,7 @@
 
 [project]
 name = "spork"
-version = "0.0.1"
+version = "0.0.3"
 authors = [
   { name="Elizabeth Munch", email="muncheli@msu.edu" },
 ]
@@ -18,7 +18,7 @@ dependencies = ["dionysus",
 "pandas", 
 "matplotlib", 
 "ripser", 
-"teaspoon", 
+"teaspoon>=1.4.0", 
 "gudhi", 
 "networkx", 
 "numpy"]
