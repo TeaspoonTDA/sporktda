@@ -34,7 +34,7 @@ jobs:
         run: sudo apt-get install libboost-all-dev
       - name: Install cmake
         run: sudo apt-get install cmake
-      - name: Install teaspoon for testing
+      - name: Install spork for testing
         run: pip install .
       - name: Run tests
         run: make tests
