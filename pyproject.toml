@@ -1,7 +1,7 @@
 [build]
 
 [project]
-name = "spork"
+name = "spork-tda"
 version = "0.0.4"
 authors = [
   { name="Elizabeth Munch", email="muncheli@msu.edu" },
