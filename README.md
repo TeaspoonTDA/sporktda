@@ -24,7 +24,7 @@ To install this package, both boost and CMake must be installed as system depend
 The spork package is available through pip install with version details found [here](https://pypi.org/project/spork/).
 The package can be installed using the following pip installation:
 
-	``pip install spork``
+	``pip install spork-tda``
 
 To install the most up-to-date version of the code, you can clone the repo and then run::
 
