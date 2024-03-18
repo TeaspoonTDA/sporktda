@@ -3,7 +3,7 @@ Description
 
 This is a companion package to [Teaspoon](https://teaspoontda.github.io/teaspoon/), and includes the modules of teaspoon that use zigzag persistence, and rely on [dionysus](https://pypi.org/project/dionysus/).  Many Teaspoon users did not need the full install that included additional system dependencies.
 
-Full documentation of this package is available [here](https://teaspoontda.github.io/spork/). The full documentation includes information about installation, module documentation with examples, contributing, the license, and citing spork.
+Full documentation of this package is available [here](https://teaspoontda.github.io/sporktda/). The full documentation includes information about installation, module documentation with examples, contributing, the license, and citing spork.
 
 The code is a compilation of work done by [Elizabeth Munch](http://www.elizabethmunch.com) and [Firas Khasawneh](http://www.firaskhasawneh.com/) along with their students and collaborators.  People who have contributed to spork include:
 
@@ -32,7 +32,7 @@ To install the most up-to-date version of the code, you can clone the repo and t
 
 from the main directory.  Note that the master branch will correspond to the version available in pypi, and the test_release branch may have new features.
 
-Please reference the requirements page in the [documentation](https://teaspoontda.github.io/spork/) for more details on other required installations.
+Please reference the requirements page in the [documentation](https://teaspoontda.github.io/sporktda/) for more details on other required installations.
 
 Contacts
 =============
