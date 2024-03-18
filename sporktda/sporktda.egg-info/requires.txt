@@ -1,0 +1,8 @@
+dionysus
+pandas
+matplotlib
+ripser
+teaspoon>=1.4.0
+gudhi
+networkx
+numpy

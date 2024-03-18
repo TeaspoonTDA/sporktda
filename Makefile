@@ -50,7 +50,7 @@ all:
 	@cp -a $(shell pwd)/build/html/. $(shell pwd)/docs/
 	
 	# Running autopep8
-	@autopep8 -r --in-place spork/
+	@autopep8 -r --in-place sporktda/
 	
 	# Running unittests
 	@python -m unittest

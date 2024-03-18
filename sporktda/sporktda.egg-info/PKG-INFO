@@ -1,3 +1,24 @@
+Metadata-Version: 2.1
+Name: sporktda
+Version: 0.0.5
+Summary: Spork - the teaspoon companion
+Author-email: Elizabeth Munch <muncheli@msu.edu>
+Project-URL: repository, https://github.com/TeaspoonTDA/spork
+Project-URL: homepage, https://github.com/TeaspoonTDA/spork
+Project-URL: documentation, https://teaspoontda.github.io/spork/
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: dionysus
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: ripser
+Requires-Dist: teaspoon>=1.4.0
+Requires-Dist: gudhi
+Requires-Dist: networkx
+Requires-Dist: numpy
+
 Description
 ==============
 
@@ -21,10 +42,10 @@ Installation
 =============
 To install this package, both boost and CMake must be installed as system dependencies.  For boost see for [unix](https://www.boost.org/doc/libs/1_66_0/more/getting_started/unix-variants.html) and [windows](https://www.boost.org/doc/libs/1_62_0/more/getting_started/windows.html).  For mac, you can run ``brew install boost`` if using homebrew as a package manager.  For CMake see [here](https://cmake.org/install/).
 
-The spork package is available through pip install with version details found [here](https://pypi.org/project/sporktda/).
+The spork package is available through pip install with version details found [here](https://pypi.org/project/spork/).
 The package can be installed using the following pip installation:
 
-	``pip install sporktda``
+	``pip install spork``
 
 To install the most up-to-date version of the code, you can clone the repo and then run::
 

@@ -5,7 +5,7 @@ Getting Started
 Requirements
 **************
 
-Bugs reports and feature reqests can be posted on the `github issues page <https://github.com/TeaspoonTDA/teaspoon/issues>`_.
+Bugs reports and feature reqests can be posted on the `github issues page <https://github.com/TeaspoonTDA/spork/issues>`_.
 
 Most of the persistence computation is teaspoon is now done with `Scikit-TDA <https://scikit-tda.org/>`_, which is python based TDA computation. In a few legacy cases, the code still utilizes these other non-Python packages.
 
@@ -18,10 +18,10 @@ To install this package, both boost and CMake must be installed as system depend
 Installation
 **************
 
-The teaspoon package is available through pip install with version details found `here <https://pypi.org/project/spork/>`_.
+The teaspoon package is available through pip install with version details found `here <https://pypi.org/project/sporktda/>`_.
 The package can be installed using the following pip installation:
 
-	``pip install spork``
+	``pip install sporktda``
 
 To install the most up-to-date version of the code, you can clone the repo and then run::
 

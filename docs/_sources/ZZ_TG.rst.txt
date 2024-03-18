@@ -11,7 +11,7 @@ Specifically, a temporal graph is a graph whose edges are active during specifie
 Functions
 ################
 
-.. automodule:: teaspoon.TDA.TGZZ
+.. automodule:: sporktda.TDA.TGZZ
    :members: 
 
 Note
