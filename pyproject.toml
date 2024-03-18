@@ -1,8 +1,8 @@
 [build]
 
 [project]
-name = "spork-tda"
-version = "0.0.4"
+name = "sporktda"
+version = "0.0.5"
 authors = [
   { name="Elizabeth Munch", email="muncheli@msu.edu" },
 ]
@@ -24,7 +24,7 @@ dependencies = ["dionysus",
 "numpy"]
 
 [tool.setuptools.packages.find]
-where = ["spork"]
+where = ["sporktda"]
 
 [project.urls]
 repository = "https://github.com/TeaspoonTDA/spork"

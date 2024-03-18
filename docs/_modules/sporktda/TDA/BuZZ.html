@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>teaspoon.TDA.BuZZ &mdash; spork 0.0.1 documentation</title>
+  <title>sporktda.TDA.BuZZ &mdash; spork 0.0.1 documentation</title>
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/plot_directive.css" type="text/css" />
@@ -74,7 +74,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../../index.html">Module code</a></li>
-      <li class="breadcrumb-item active">teaspoon.TDA.BuZZ</li>
+      <li class="breadcrumb-item active">sporktda.TDA.BuZZ</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -83,7 +83,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <h1>Source code for teaspoon.TDA.BuZZ</h1><div class="highlight"><pre>
+  <h1>Source code for sporktda.TDA.BuZZ</h1><div class="highlight"><pre>
 <span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <span class="kn">import</span> <span class="nn">dionysus</span> <span class="k">as</span> <span class="nn">dio</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -96,7 +96,7 @@
 <span class="kn">import</span> <span class="nn">random</span>
 
 
-<div class="viewcode-block" id="PtClouds"><a class="viewcode-back" href="../../../buzz.html#teaspoon.TDA.BuZZ.PtClouds">[docs]</a><span class="k">class</span> <span class="nc">PtClouds</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+<div class="viewcode-block" id="PtClouds"><a class="viewcode-back" href="../../../buzz.html#sporktda.TDA.BuZZ.PtClouds">[docs]</a><span class="k">class</span> <span class="nc">PtClouds</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Class to hold collection of point clouds.</span>
 
@@ -153,7 +153,7 @@
         <span class="n">output</span> <span class="o">+=</span> <span class="s1">&#39;---</span><span class="se">\n</span><span class="s1">&#39;</span>
         <span class="k">return</span> <span class="n">output</span>
 
-<div class="viewcode-block" id="PtClouds.use_Landmarks"><a class="viewcode-back" href="../../../buzz.html#teaspoon.TDA.BuZZ.PtClouds.use_Landmarks">[docs]</a>    <span class="k">def</span> <span class="nf">use_Landmarks</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num_landmarks</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="PtClouds.use_Landmarks"><a class="viewcode-back" href="../../../buzz.html#sporktda.TDA.BuZZ.PtClouds.use_Landmarks">[docs]</a>    <span class="k">def</span> <span class="nf">use_Landmarks</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num_landmarks</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Uses landmark complex by subsampling each point cloud using a max min approach.</span>
 
@@ -175,7 +175,7 @@
             <span class="bp">self</span><span class="o">.</span><span class="n">ptclouds</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s1">&#39;PtCloud&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">minmax_subsample</span><span class="p">(</span>
                 <span class="n">pc</span><span class="p">,</span> <span class="n">num_landmarks</span><span class="p">,</span> <span class="n">seed</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="PtClouds.run_Zigzag"><a class="viewcode-back" href="../../../buzz.html#teaspoon.TDA.BuZZ.PtClouds.run_Zigzag">[docs]</a>    <span class="k">def</span> <span class="nf">run_Zigzag</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
+<div class="viewcode-block" id="PtClouds.run_Zigzag"><a class="viewcode-back" href="../../../buzz.html#sporktda.TDA.BuZZ.PtClouds.run_Zigzag">[docs]</a>    <span class="k">def</span> <span class="nf">run_Zigzag</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Runs zigzag persistence on collections of point clouds, taking unions between each adjacent pair of point clouds.</span>
 <span class="sd">        Adds attributes to class ``zz``, ``zz_dgms``, ``zz_cells`` which are the outputs of dionysus&#39; zigzag persistence function.</span>
@@ -248,7 +248,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">setup_time</span> <span class="o">=</span> <span class="n">ft_end</span> <span class="o">-</span> <span class="n">ft_st</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">zigzag_time</span> <span class="o">=</span> <span class="n">zz_end</span> <span class="o">-</span> <span class="n">zz_st</span></div>
 
-<div class="viewcode-block" id="PtClouds.setup_Zigzag_fixed"><a class="viewcode-back" href="../../../buzz.html#teaspoon.TDA.BuZZ.PtClouds.setup_Zigzag_fixed">[docs]</a>    <span class="k">def</span> <span class="nf">setup_Zigzag_fixed</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<div class="viewcode-block" id="PtClouds.setup_Zigzag_fixed"><a class="viewcode-back" href="../../../buzz.html#sporktda.TDA.BuZZ.PtClouds.setup_Zigzag_fixed">[docs]</a>    <span class="k">def</span> <span class="nf">setup_Zigzag_fixed</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Helper function for ``run_Zigzag`` that sets up inputs needed for Dionysus&#39; zigzag persistence function.</span>
 <span class="sd">        This only works for a fixed radius r.</span>
@@ -375,7 +375,7 @@
 
         <span class="k">return</span> <span class="n">filtration</span><span class="p">,</span> <span class="n">times_list</span></div>
 
-<div class="viewcode-block" id="PtClouds.setup_Zigzag_changing"><a class="viewcode-back" href="../../../buzz.html#teaspoon.TDA.BuZZ.PtClouds.setup_Zigzag_changing">[docs]</a>    <span class="k">def</span> <span class="nf">setup_Zigzag_changing</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<div class="viewcode-block" id="PtClouds.setup_Zigzag_changing"><a class="viewcode-back" href="../../../buzz.html#sporktda.TDA.BuZZ.PtClouds.setup_Zigzag_changing">[docs]</a>    <span class="k">def</span> <span class="nf">setup_Zigzag_changing</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Helper function for ``run_Zigzag`` that sets up inputs needed for Dionysus&#39; zigzag persistence function.</span>
 <span class="sd">        This one allows r to be a list of radii, rather than one fixed value</span>
@@ -548,7 +548,7 @@
 
         <span class="k">return</span> <span class="n">filtration</span><span class="p">,</span> <span class="n">times_list</span></div>
 
-<div class="viewcode-block" id="PtClouds.plot_ZZ_PtClouds"><a class="viewcode-back" href="../../../buzz.html#teaspoon.TDA.BuZZ.PtClouds.plot_ZZ_PtClouds">[docs]</a>    <span class="k">def</span> <span class="nf">plot_ZZ_PtClouds</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">save</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">savename</span><span class="o">=</span><span class="s1">&#39;PC.png&#39;</span><span class="p">,</span> <span class="n">v_plts</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">h_plts</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="PtClouds.plot_ZZ_PtClouds"><a class="viewcode-back" href="../../../buzz.html#sporktda.TDA.BuZZ.PtClouds.plot_ZZ_PtClouds">[docs]</a>    <span class="k">def</span> <span class="nf">plot_ZZ_PtClouds</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">save</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">savename</span><span class="o">=</span><span class="s1">&#39;PC.png&#39;</span><span class="p">,</span> <span class="n">v_plts</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">h_plts</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Plot the zigzag of point clouds.</span>
 
@@ -636,7 +636,7 @@
             <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Saving fig at &#39;</span><span class="p">,</span> <span class="n">savename</span><span class="p">,</span> <span class="s1">&#39;...&#39;</span><span class="p">)</span>
             <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">savename</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="PtClouds.plot_ZZ_Full_PtClouds"><a class="viewcode-back" href="../../../buzz.html#teaspoon.TDA.BuZZ.PtClouds.plot_ZZ_Full_PtClouds">[docs]</a>    <span class="k">def</span> <span class="nf">plot_ZZ_Full_PtClouds</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">save</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">savename</span><span class="o">=</span><span class="s1">&#39;PC_Full.png&#39;</span><span class="p">,</span> <span class="n">v_plts</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">h_plts</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="PtClouds.plot_ZZ_Full_PtClouds"><a class="viewcode-back" href="../../../buzz.html#sporktda.TDA.BuZZ.PtClouds.plot_ZZ_Full_PtClouds">[docs]</a>    <span class="k">def</span> <span class="nf">plot_ZZ_Full_PtClouds</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">save</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">savename</span><span class="o">=</span><span class="s1">&#39;PC_Full.png&#39;</span><span class="p">,</span> <span class="n">v_plts</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">h_plts</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Plot the zigzag of full point clouds.</span>
 <span class="sd">        Only needed if using landmark complex and want to plot the full point clouds before subsampling.</span>
@@ -724,7 +724,7 @@
             <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Saving fig at &#39;</span><span class="p">,</span> <span class="n">savename</span><span class="p">,</span> <span class="s1">&#39;...&#39;</span><span class="p">)</span>
             <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">savename</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="PtClouds.plot_ZZ_Cplx"><a class="viewcode-back" href="../../../buzz.html#teaspoon.TDA.BuZZ.PtClouds.plot_ZZ_Cplx">[docs]</a>    <span class="k">def</span> <span class="nf">plot_ZZ_Cplx</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">save</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">savename</span><span class="o">=</span><span class="s1">&#39;Cplx.png&#39;</span><span class="p">,</span> <span class="n">v_plts</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">h_plts</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<div class="viewcode-block" id="PtClouds.plot_ZZ_Cplx"><a class="viewcode-back" href="../../../buzz.html#sporktda.TDA.BuZZ.PtClouds.plot_ZZ_Cplx">[docs]</a>    <span class="k">def</span> <span class="nf">plot_ZZ_Cplx</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">save</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">savename</span><span class="o">=</span><span class="s1">&#39;Cplx.png&#39;</span><span class="p">,</span> <span class="n">v_plts</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">h_plts</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Plot the zigzag of rips complexes.</span>
 

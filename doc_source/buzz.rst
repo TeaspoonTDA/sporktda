@@ -3,7 +3,7 @@ Bifurcations using ZigZag (BuZZ)
 
 This module contains code for the Bifurcations using ZigZag (BuZZ) method, which uses zigzag persistence to detect parameter values in a dynamical system which have a Hopf bifurcation. The paper summarizing this methodology is "`Using Zigzag Persistent Homology to Detect Hopf Bifurcations in Dynamical Systems <https://www.mdpi.com/1999-4893/13/11/278>`_". A basic example showing the functionality for some synthetic time series data can be found below.
 
-.. automodule:: teaspoon.TDA.BuZZ
+.. automodule:: sporktda.TDA.BuZZ
    :members: PtClouds
 
 Example
@@ -14,7 +14,7 @@ First, import necessary modules, create some example data, and plot it::
   import numpy as np
   import matplotlib.pyplot as plt
   from teaspoon.TDA.Draw import drawDgm
-  from teaspoon.TDA.BuZZ import PtClouds
+  from sporktda.TDA.BuZZ import PtClouds
   from teaspoon.SP.tsa_tools import takens
 
   t = np.linspace(0, 6*np.pi+1, 50)
