@@ -2,7 +2,7 @@
 
 [project]
 name = "sporktda"
-version = "0.0.5"
+version = "0.0.6"
 authors = [
   { name="Elizabeth Munch", email="muncheli@msu.edu" },
 ]
@@ -27,7 +27,7 @@ dependencies = ["dionysus",
 where = ["sporktda"]
 
 [project.urls]
-repository = "https://github.com/TeaspoonTDA/spork"
-homepage = "https://github.com/TeaspoonTDA/spork"
-documentation = "https://teaspoontda.github.io/spork/"
+repository = "https://github.com/TeaspoonTDA/sporktda"
+homepage = "https://github.com/TeaspoonTDA/sporktda"
+documentation = "https://teaspoontda.github.io/sporktda/"
 
